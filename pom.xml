@@ -46,6 +46,14 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+<!--        devtools-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+<!--            不编译-->
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
     <repositories>
@@ -64,6 +72,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
             </plugin>
         </plugins>
     </build>
