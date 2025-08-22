@@ -11,6 +11,8 @@ public class DemoApplication {
     public static void main(String[] args) {
 
         ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
-//        var heavyResource = context.getBean(HeavyResource.class);
+        var heavyResource = context.getBean(HeavyResource.class);
+        var heavyResource1 = context.getBean(HeavyResource.class);
+
     }
 }
