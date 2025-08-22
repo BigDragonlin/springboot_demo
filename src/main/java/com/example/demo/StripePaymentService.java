@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class StripePaymentService implements PaymentService {
     @Override
     public void processPayment(int amount){
