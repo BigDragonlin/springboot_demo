@@ -8,3 +8,6 @@ stripe:
   enabled: true
   timeout: 10
   supportedCurrencies: USD,EUR,GBP
+
+payment:
+  type: paypal
