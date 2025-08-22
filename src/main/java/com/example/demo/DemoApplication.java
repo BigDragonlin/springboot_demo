@@ -11,7 +11,6 @@ public class DemoApplication {
     public static void main(String[] args) {
 
         ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
-        var orderService = context.getBean(OrderService.class);
-        orderService.createOrder(100);
+//        var heavyResource = context.getBean(HeavyResource.class);
     }
 }
