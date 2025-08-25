@@ -3,7 +3,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Value;
 import java.util.List;
 
-@Service("stripePaymentService")
 public class StripePaymentService implements PaymentService {
     @Value("${stripe.api.url}")
     private String apiUrl;

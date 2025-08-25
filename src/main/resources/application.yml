@@ -13,3 +13,18 @@ stripe:
   enabled: true
   timeout: 10
   supportedCurrencies: USD,EUR,GBP
+
+payment:
+  type: paypal
+
+email:
+  host: localhost
+  port: 25
+
+# 存储类型
+repository:
+  type: database
+
+# 通知类型
+notification:
+  type: email
