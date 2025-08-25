@@ -1,6 +1,11 @@
 spring:
   application:
     name: demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?createDatabaseIfNotExist=true
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver  # 添加这一行以明确指定驱动程序
 
 stripe:
   api:
