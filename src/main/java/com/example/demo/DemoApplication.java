@@ -7,6 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoApplication {
 
     public static void main(String[] args) {
-        User user = new User(1L, "111@email.com", "123", "Alice");
+        var user = User.builder()
+                .name("John Doe")
+                .email("JohnDoe@example.com")
+                .build();
+        System.out.println(user);
     }
 }
