@@ -34,4 +34,9 @@ public class User {
         addresses.add(address);
         address.setUser(this);
     }
+
+    public void removeAddress(Address address) {
+        addresses.remove(address);
+        address.setUser(null);
+    }
 }
