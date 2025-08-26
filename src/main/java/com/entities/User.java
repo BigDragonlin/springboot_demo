@@ -2,7 +2,6 @@ package com.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,6 +27,7 @@ public class User {
     private String password;
 
     @OneToMany(mappedBy = "user")
+    @Builder.Default
     List<Address> addresses = new ArrayList<>();
 
     public void addAddress(Address address) {
